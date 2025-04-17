@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ちｂき</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app">
+    <main>
+      <section class="hero">
+        <h1>{{ titlePart1 }} <span :style="gradientStyle">{{ titlePart2 }}</span></h1>
+        <p class="subtitle">{{ subtitle }}</p>
+
+        <div class="social-links">
+          <a href="https://x.com/tibki_japan" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <img src="x-icon.svg" alt="X" class="social-svg">
+          </a>
+          <a href="https://discord.gg/evex" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <img src="discord-icon.svg" alt="Discord" class="social-svg">
+          </a>
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2><i class="icon fas fa-user"></i> Profile Links</h2>
+          </div>
+          <div class="profile-content">
+            <div class="profile-links-vertical">
+              <a href="https://sakana11.org" target="_blank" rel="noopener noreferrer" class="profile-link vertical-link">
+                <img src="techfish.png" alt="Techfish" class="profile-icon">
+                techfishのホームページ
+              </a>
+              <a href="https://info.takos.jp/" target="_blank" rel="noopener noreferrer" class="profile-link vertical-link">
+                <img src="takos.png" alt="Tako" class="profile-icon">
+                たこのホームページ
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
