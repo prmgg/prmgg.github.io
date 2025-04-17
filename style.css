@@ -204,7 +204,6 @@ h1 {
    font-size: 1rem; 
 }
 
-/* Vertical Profile Links */
 .profile-links-vertical {
     display: flex;
     flex-direction: column;
