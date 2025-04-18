@@ -20,7 +20,6 @@
       <section class="hero">
         <h1>{{ titlePart1 }} <span :style="gradientStyle">{{ titlePart2 }}</span></h1>
         <p class="subtitle">{{ subtitle }}</p>
-
         <div class="social-links">
           <a href="https://x.com/tibki_japan" class="social-icon" target="_blank" rel="noopener noreferrer">
             <img src="x-icon.svg" alt="X" class="social-svg">
@@ -30,11 +29,46 @@
           </a>
         </div>
       </section>
-
+     
       <section class="profile-section">
         <div class="section-container">
           <div class="section-header">
-            <h2><i class="icon fas fa-user"></i> Profile Links</h2>
+            <h2><i class="icon fas fa-user"></i> Profile</h2>
+          </div>
+          <div class="profile-content">
+            <p class="description">私はちｂきです。<br>主に、ツール開発、ウェブ開発（フロントエンド/バックエンド）をしております。</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="profile-section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2><i class="icon fas fa-hammer fa-rotate-30"></i> Skills</h2>
+          </div>
+          <div class="profile-content">
+            <div class="skills-container">
+              <div class="skill-item">
+                <img src="python-icon.svg" alt="Python" class="skill-icon">
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="skill-item">
+                <img src="javascript-icon.svg" alt="JavaScript" class="skill-icon">
+                <span class="skill-name">JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <img src="php-icon.svg" alt="PHP" class="skill-icon">
+                <span class="skill-name">PHP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section class="profile-section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2><i class="icon fas fa-link"></i> Links</h2>
           </div>
           <div class="profile-content">
             <div class="profile-links-vertical">
@@ -52,7 +86,6 @@
       </section>
     </main>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>
