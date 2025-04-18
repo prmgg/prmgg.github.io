@@ -229,11 +229,11 @@ h1 {
     transform: rotate(10deg) scale(1.1);
   }
 
-.coming-soon {
+  .description {
     color: #888;
     font-style: italic;
-    text-align: center;
-    padding: 20px 0;
+    text-align: left; 
+    padding: 20px 0;  
 }
 
 @media (max-width: 768px) {
@@ -270,5 +270,61 @@ h1 {
     }
     .section-header h2 {
         font-size: 1.2rem;
+    }
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+    transform: translateY(-5px) rotate(10deg);
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.fa-rotate-30 {
+    transform: rotate(30deg);
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        gap: 20px;
+    }
+    
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        gap: 15px;
+    }
+    
+    .skill-icon {
+        width: 40px;
+        height: 40px;
     }
 }
